@@ -17,7 +17,7 @@ lang: en-US
 title: Langlands Lin
 email: 1700017758@pku.edu.cn
 description:
-baseurl: # the optional subpath of your site, e.g. "/blog"
+baseurl: https://github.com/LanglandsLin
 url: https://github.com/LanglandsLin
 author:
   name: 林里浪
