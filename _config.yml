@@ -13,13 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: intzero's Blog
-author: intzero
-email: intzero@outlook.com
+title: Langlands Lin
+author: 林里浪
+email: 1700017758@pku.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
-  程序媛/小硕/外协/折腾/技术宅
-url: http://lszero.com # the base hostname & protocol for your site, e.g. http://example.com
-sitesearchurl: lszero.github.io
+  
+url: https://langlandslin.github.io/
+sitesearchurl: langlandslin.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
 
 # Markdown Processors
@@ -37,7 +37,7 @@ excerpt_separator: <!-- more -->
 permalink: /:categories/:title.html
 
 social_media:
-  github_url: https://github.com/lszero
+  github_url: https://github.com/LanglandsLin
   weibo_url: http://weibo.com/u/2313016370
   zhihu_url: https://www.zhihu.com/people/lszero
   twitter_url: https://twitter.com/_lszero
