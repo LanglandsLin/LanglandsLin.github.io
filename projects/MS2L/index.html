@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="language" content="english">
 <title>acmmm2020_lll</title>
-<meta name="description" content="cvpr2019_ssj">
+<meta name="description" content="acmmm_lll">
 <meta name="author" content="Lilang Lin">
 <link rel="icon" type="image/x-icon" href="http://www.icst.pku.edu.cn/favicon.ico">
 <link rel="stylesheet" type="text/css" href="files/project.css">
@@ -33,7 +33,7 @@
 	<div class="content"><br>
 		<div class="title">
 			<p class="banner" align="center"></p>
-			<h1>Unsupervised Person Image Generation with Semantic Parsing Transformation</h1>
+			<h1>MS2L: Multi-Task Self-Supervised Learning for Skeleton Based Action Recognition</h1>
 		</div>
 
 		<div class="authors" >
@@ -42,7 +42,10 @@
             </div>
             <div class="author">
                <a href="mailto:ssj940920@jd.com" style="text-decoration: none">Sijie Song</a>
-            </div>
+			</div>
+			<div class="author">
+				<a href="mailto:yangwenhan@pku.edu.cn" style="text-decoration: none">Wenhan Yang</a>
+			 </div>
             <div class="author">
                <a href="mailto:liujiaying@pku.edu.cn" style="text-decoration: none">Jiaying Liu</a>
             </div>
@@ -51,14 +54,14 @@
 		<br><hr>
 		<div class="teaser sec">
 			<img src="./files/teaser.png" alt="Teaser" width="100%">
-		  	<p style="text-align: left font-size:15%:">Fig.1 Our model is generalizable to pose-guided image generation, clothing texture transfer and controlled image manipulation.</p>
+		  	<p style="text-align: left font-size:15%:">Fig.1  Our proposed approach (MS2L) learns more general and discriminative features benefiting from multiple self-supervised tasks.</p>
 	  	</div>
 
 		<div class="abstract_sec">
 			<h2>Abstract</h2>
 			<div class="desp">
 				<p style="text-align:justify">
-				In this paper, we address unsupervised pose-guided person image generation, which is known challenging due to non-rigid deformation. Unlike previous methods learning a rock-hard direct mapping between human bodies, we propose a new pathway to decompose the hard mapping into two more accessible subtasks, namely, semantic parsing transformation and appearance generation. Firstly, a semantic generative network is proposed to transform between semantic parsing maps, in order to simplify the nonrigid deformation learning. Secondly, an appearance generative network learns to synthesize semantic-aware textures. Thirdly, we demonstrate that training our framework in an end-to-end manner further refines the semantic maps and final results accordingly. Our method is generalizable to other semantic-aware person image generation tasks, e.g., clothing texture transfer and controlled image manipulation. Experimental results demonstrate the superiority of our method on DeepFashion and Market-1501 datasets, especially in keeping the clothing attributes and better body shapes.
+					In this paper, we address self-supervised representation learning from human skeletons for action recognition. 
 				</p>
 			</div>
 		</div>
@@ -66,7 +69,7 @@
 	
 		<div class="Framework sec">
 			<div class="picture_wrapper" width="100%">
-		  		<img src="./files/framework.png" alt="Framework" width="100%">
+		  		<img src="./files/pipeline.png" alt="Framework" width="100%">
 		  		<p style="text-align: left font-size:75%:">Fig.2 The framework of our model.</p>
 	  		</div>
 	  	</div>
@@ -74,55 +77,23 @@
 	  	<div class="download_sec">
 			<h2>Resources</h2>
 			<div>
-				<li><strong>Paper</strong>:<a href="http://arxiv.org/abs/1904.03379"> [arXiv] </a></li>
-				<li><strong>Supplementary material</strong>: <a href="./files/supp.pdf"> [supp] </a></li>
+				<li><strong>Paper</strong>:  coming soon</li>
+				<li><strong>Supplementary material</strong>:  coming soon</li>
 				<li><strong>Code</strong>:  coming soon</li>
 
 			</div>
 		</div>
-		<hr>
-
-
-		<div class="experiments_sec">
-		<h2>Results of Pose-Guided Image Generation</h2>
-
-			<div class="picture_result">
-				<img src="files/pose_guided_image_generation.png" alt="Teaser" width="75%">
-
-		  		<p style="text-align: left font-size:75%:">Fig.3 Visual results of different methods on DeepFashion. Compared with PG2[1], Def-GAN[2], UPIS[3], and V-Unet[4]. Our method successfully keeps the clothing attributes (e.g., textures) and generates better body shapes (e.g., arms).</p>
-			</div>
-		</div>
-		<hr>
-		<div class="experiments_sec">
-		<h2>Results of Clothing Texture Transfer</h2>
-
-			<div class="picture_result">
-				<img src="files/clothing_texture_transfer.png" alt="Teaser" width="75%">
-
-		  		<p style="text-align: left font-size:75%:">Fig.4 Application for clothing texture transfer. Left: condition and target images. Middle: transfer from A to B. Right: transfer from B to A. We compare our methods with image analogy[5] and neural doodle[6].</p>
-			</div>
-		</div> 	
-		<hr>
-		<div class="experiments_sec">
-		<h2>Results of Controlled Image Manipulation</h2>
-
-			<div class="picture_result">
-				<img src="files/ctrl_stoa.png" alt="ctrl_stoa" width="75%">
-
-		  		<p style="text-align: left font-size:75%:">Fig.5 Application for controlled image manipulation. By manually modifying the semantic maps, we can control the image generation in the desired layout.</p>
-			</div>
-		</div> 	
 
 <hr>
 		
        <div>
           <h2>Reference</h2>
-            <p>[1]. L. Ma, X. Jia, Q. Sun, B. Schiele, T. Tuytelaars, and L. Van Gool. Pose guided person image generation. In NIPS, 2017.</p>
-            <p>[2]. A. Siarohin, E. Sangineto, S. Lathuili`ere, and N. Sebe. Deformable gans for pose-based human image generation. In CVPR, 2018. </p>
-            <p>[3]. A. Pumarola, A. Agudo, A. Sanfeliu, and F. Moreno-Noguer. Unsupervised person image synthesis in arbitrary poses. In CVPR, 2018.</p>
-            <p>[4]. P. Esser, E. Sutter, and B. Ommer. A variational u-net for conditional appearance and shape generation. In CVPR, 2018.</p>
-            <p>[5]. A. Hertzmann. Image analogies. Proc Siggraph, 2001.</p>
-            <p>[6]. A. J. Champandard. Semantic style transfer and turning two-bit doodles into fine artworks. arXiv preprint arXiv: 1603.01768, 2016. </p>
+            <p>[1]. Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. arXiv preprint arXiv:2002.05709 (2020).</p>
+            <p>[2]. Girum G Demisse, Konstantinos Papadopoulos, Djamila Aouada, and Bjorn Ottersten. 2018. Pose Encoding for Robust Skeleton-Based Action Recognition. (2018),188–194. </p>
+            <p>[3]. Carl Doersch, Abhinav Gupta, and Alexei A Efros. 2015. Unsupervised visual representation learning by context prediction. In Proc. IEEE Int’l Conference on Computer Vision. 1422–1430.</p>
+            <p>[4]. Yong Du, Yun Fu, and Liang Wang. 2016. Representation learning of temporal dynamics for skeleton-based action recognition. IEEE Transactions on Image Processing 25, 7 (2016), 3010–3022.</p>
+            <p>[5]. Yong Du, Wei Wang, and Liang Wang. 2015. Hierarchical Recurrent Neural Network for Skeleton Based Action Recognition. In Proc. IEEE Conference on Computer Vision and Pattern Recognition. 1110–1118.</p>
+            <p>[6]. Dumitru Erhan, Yoshua Bengio, Aaron Courville, Pierre-Antoine Manzagol, Pascal Vincent, and Samy Bengio. 2010. Why does unsupervised pre-training help deep learning? Journal of Machine Learning Research 11, Feb (2010), 625–660. </p>
         </div>
 <hr>        
 	<p class="banner" align="center">Last update: Oct. 2020</p>
