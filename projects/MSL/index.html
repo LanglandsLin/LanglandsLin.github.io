@@ -33,7 +33,7 @@
 	<div class="content"><br>
 		<div class="title">
 			<p class="banner" align="center"></p>
-			<h1>MS2L: Multi-Task Self-Supervised Learning for Skeleton Based Action Recognition</h1>
+			<h1>MS<sup>2</sup>L: Multi-Task Self-Supervised Learning for Skeleton Based Action Recognition</h1>
 		</div>
 
 		<div class="authors" >
@@ -54,48 +54,63 @@
 		<br><hr>
 		<div class="teaser sec">
 			<img src="./files/teaser.png" alt="Teaser" width="100%">
-		  	<p style="text-align: left font-size:15%:">Fig.1  Our proposed approach (MS2L) learns more general and discriminative features benefiting from multiple self-supervised tasks.</p>
+		  	<p style="text-align: left font-size:15%:">Fig.1  Our proposed approach (MS<sup>2</sup>L) learns more general and discriminative features benefiting from multiple self-supervised tasks.</p>
 	  	</div>
 
 		<div class="abstract_sec">
 			<h2>Abstract</h2>
 			<div class="desp">
 				<p style="text-align:justify">
-					In this paper, we address self-supervised representation learning from human skeletons for action recognition. 
+					In this paper, we address self-supervised representation learning from human skeletons for action recognition. Previous methods, which usually learn feature presentations from a single reconstruction task, may come across the overfitting problem, and the features are not generalizable for action recognition. Instead, we propose to integrate multiple tasks to learn more general representations in a self-supervised manner. To realize this goal, we integrate motion prediction, jigsaw puzzle recognition, and contrastive learning to learn skeleton features from different aspects. Skeleton dynamics can be modeled through motion prediction by predicting the future sequence. And temporal patterns, which are critical for action recognition, are learned through solving jigsaw puzzles. We further regularize the feature space by contrastive learning. Besides, we explore different training strategies to utilize the knowledge from self-supervised tasks for action recognition. We evaluate our multi-task self-supervised learning approach with action classifiers trained under different configurations, including unsupervised, semi-supervised and fully-supervised settings. Our experiments on the NW-UCLA, NTU RGB+D, and PKUMMD datasets show remarkable performance for action recognition, demonstrating the superiority of our method in learning more discriminative and general features.
 				</p>
 			</div>
 		</div>
-		<hr>
 	
 		<div class="Framework sec">
-			<div class="picture_wrapper" width="100%">
-		  		<img src="./files/pipeline.png" alt="Framework" width="100%">
-		  		<p style="text-align: left font-size:15%:">Fig.2 The framework of our model.</p>
-	  		</div>
+			<h2>Framework</h2>
+			<img src="./files/pipeline.png" alt="Framework" width="100%">
+			<p style="text-align: left font-size:15%:">Fig.2 The structure of our network. (a) Encoder. (b) Multi-task heads. (c) Classifier for action recognition. We use yellow, blue and grey arrows to indicate the pipeline for motion prediction, jigsaw puzzle recognition and contrastive learning, respectively. Action recognition is achieved with the red pipeline.</p>
 	  	</div>
 
+		<div class="experiments_sec">
+			<h2>Results</h2>
+			<div class="picture_wrapper" width="100%">
+				<img src="./files/table12.png" alt="Results" width="100%">
+				<img src="./files/table3.png" alt="Results" width="60%">
+				<img src="./files/table45.png" alt="Results" width="60%">
+				<img src="./files/table6.png" alt="Results" width="60%">
+			</div>
+		</div>
+		  
+		
 	  	<div class="download_sec">
 			<h2>Resources</h2>
 			<div>
-				<li><strong>Paper</strong>:  coming soon</li>
+				<li><strong>Paper</strong>:  <a href="https://arxiv.org/abs/2010.05599">arXiv</a></li>
 				<li><strong>Supplementary material</strong>:  coming soon</li>
 				<li><strong>Code</strong>:  coming soon</li>
 
 			</div>
 		</div>
-<hr>
+
+		<div class="citation_sec">
+			<h2>Citation</h2>
+			<p class="bibtex">@inproceedings{MS2L, 
+&nbsp;&nbsp; author={Lilang Lin and Sijie Song and Wenhan Yang and Jiaying Liu}, 
+&nbsp;&nbsp; booktitle={ACM Multimedia}, 
+&nbsp;&nbsp; title={MS^2L: Multi-Task Self-Supervised Learning for Skeleton Based Action Recognition}, 
+&nbsp;&nbsp; year={2020}, 
+&nbsp;&nbsp; }
+			</p>
+	    </div>
 		
        <div>
           <h2>Reference</h2>
-            <p>[1]. Ting Chen, Simon Kornblith, Mohammad Norouzi, and Geoffrey Hinton. 2020. A simple framework for contrastive learning of visual representations. arXiv preprint arXiv:2002.05709 (2020).</p>
-            <p>[2]. Girum G Demisse, Konstantinos Papadopoulos, Djamila Aouada, and Bjorn Ottersten. 2018. Pose Encoding for Robust Skeleton-Based Action Recognition. (2018),188–194. </p>
-            <p>[3]. Carl Doersch, Abhinav Gupta, and Alexei A Efros. 2015. Unsupervised visual representation learning by context prediction. In Proc. IEEE Int’l Conference on Computer Vision. 1422–1430.</p>
-            <p>[4]. Yong Du, Yun Fu, and Liang Wang. 2016. Representation learning of temporal dynamics for skeleton-based action recognition. IEEE Transactions on Image Processing 25, 7 (2016), 3010–3022.</p>
-            <p>[5]. Yong Du, Wei Wang, and Liang Wang. 2015. Hierarchical Recurrent Neural Network for Skeleton Based Action Recognition. In Proc. IEEE Conference on Computer Vision and Pattern Recognition. 1110–1118.</p>
-            <p>[6]. Dumitru Erhan, Yoshua Bengio, Aaron Courville, Pierre-Antoine Manzagol, Pascal Vincent, and Samy Bengio. 2010. Why does unsupervised pre-training help deep learning? Journal of Machine Learning Research 11, Feb (2010), 625–660. </p>
+            <p>[1]. T. Chen, S. Kornblith, M. Norouzi, and G. Hinton. A simple framework for contrastive learning of visual representations. ICML 2020.</p>
+            <p>[2]. C. Doersch, A. Gupta, and A. A Efros. Unsupervised visual representation learning by context prediction. ICCV 2015.</p>
+            <p>[3]. Y. Du, Y. Fu, and L. Wang. Representation learning of temporal dynamics for skeleton-based action recognition. TIP 2016.</p>
+            <p>[4]. Y. Du, W. Wang, and L. Wang. Hierarchical Recurrent Neural Network for Skeleton Based Action Recognition. CVPR 2015.</p>
         </div>
-<hr>        
-	<p class="banner" align="center">Last update: Oct. 2020</p>
 	
   </div>
 </div>

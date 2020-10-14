@@ -79,7 +79,6 @@ div.picture_wrapper {
     font-size:10pt;
     text-align:center;
     overflow:visible;
-    padding: 2em 0 0.5em 0;
     width:850px;
 }
 
@@ -140,7 +139,7 @@ div.format {
     display: none;
 }
 .citation_sec{
-    font-size: 11pt;
+    /* font-size: 11pt; */
     padding: 0.5em 0 0.5em 0;
     /*display: none;*/
 }
@@ -150,6 +149,5 @@ div.format {
 }
 
 .bibtex{
-    padding-left: 20px;
     font-family: "Courier New", Courier, 'gandhi_sansregular', monospace;
 }
